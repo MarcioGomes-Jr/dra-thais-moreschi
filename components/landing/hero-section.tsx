@@ -45,7 +45,7 @@ export function HeroSection() {
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-tight text-foreground mb-6">
               <span className="block">Com Método,</span>
               <span className="block">Eficiência e um</span>
-              <span className="block text-primary">Caminho Prático!</span>
+              <span className="block text-primary">Caminho Prático</span>
             </h1>
             
             <p className="text-base md:text-lg text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed">

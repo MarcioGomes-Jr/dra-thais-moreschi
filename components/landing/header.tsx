@@ -5,11 +5,11 @@ import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
-  { href: "#sobre", label: "Sobre" },
-  { href: "#metodo", label: "Método" },
-  { href: "#servicos", label: "Serviços" },
-  { href: "#clinica", label: "Clínica" },
-  { href: "#contato", label: "Contato" },
+  { id: "sobre", href: "#sobre", label: "Sobre" },
+  { id: "metodo", href: "#metodo", label: "Método" },
+  { id: "servicos", href: "#metodo", label: "Serviços" },
+  { id: "clinica", href: "#clinica", label: "Clínica" },
+  { id: "contato", href: "#contato", label: "Contato" },
 ]
 
 export function Header() {
@@ -53,7 +53,7 @@ export function Header() {
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
-                key={link.href}
+                key={link.id}
                 href={link.href}
                 className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-primary hover:after:w-full after:transition-all after:duration-300"
               >
@@ -90,7 +90,7 @@ export function Header() {
           <nav className="flex flex-col gap-4 py-4 border-t border-border">
             {navLinks.map((link) => (
               <a
-                key={link.href}
+                key={link.id}
                 href={link.href}
                 onClick={handleNavClick}
                 className="text-base font-medium text-foreground/80 hover:text-primary transition-colors duration-300 py-2"

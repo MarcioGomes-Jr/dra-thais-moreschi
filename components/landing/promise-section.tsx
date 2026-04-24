@@ -1,59 +1,8 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
-import { ArrowUpRight, Users, FileCheck, Heart } from "lucide-react"
+import { useEffect, useRef } from "react"
+import { ArrowUpRight } from "lucide-react"
 import Image from "next/image"
-
-const stats = [
-  { icon: Users, value: 500, suffix: "+", label: "Pacientes atendidos" },
-  { icon: FileCheck, value: 1200, suffix: "+", label: "Protocolos aplicados" },
-  { icon: Heart, value: 800, suffix: "+", label: "Rotinas transformadas" },
-]
-
-function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
-  const [count, setCount] = useState(0)
-  const ref = useRef<HTMLSpanElement>(null)
-  const hasAnimated = useRef(false)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting && !hasAnimated.current) {
-          hasAnimated.current = true
-          const duration = 2000
-          const steps = 60
-          const increment = value / steps
-          let current = 0
-
-          const timer = setInterval(() => {
-            current += increment
-            if (current >= value) {
-              setCount(value)
-              clearInterval(timer)
-            } else {
-              setCount(Math.floor(current))
-            }
-          }, duration / steps)
-
-          return () => clearInterval(timer)
-        }
-      },
-      { threshold: 0.5 }
-    )
-
-    if (ref.current) {
-      observer.observe(ref.current)
-    }
-
-    return () => observer.disconnect()
-  }, [value])
-
-  return (
-    <span ref={ref} className="font-serif text-4xl md:text-5xl font-medium text-primary">
-      {count}{suffix}
-    </span>
-  )
-}
 
 export function PromiseSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -85,16 +34,16 @@ export function PromiseSection() {
         {/* First Block */}
         <div className="animate-on-scroll duration-700 max-w-4xl mx-auto text-center mb-20">
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-8 leading-tight text-balance">
-            Existe um caminho para{" "}
-            <span className="text-primary">viver e envelhecer bem.</span>
+            Existe um caminho possível{" "}
+            <span className="text-primary">para viver e envelhecer bem</span>
           </h2>
           
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6">
-            Existe um caminho possível para <strong className="text-foreground font-semibold">não apenas viver bem, mas envelhecer com vitalidade, autonomia e clareza.</strong> Esse caminho passa por uma medicina integrativa e personalizada, que considera a individualidade de cada paciente para promover <strong className="text-foreground font-semibold">emagrecimento sustentável, equilíbrio metabólico e mais qualidade de vida ao longo dos anos.</strong>
+            Existe um caminho possível para <strong className="text-foreground font-semibold">não apenas viver bem, mas envelhecer com vitalidade, autonomia e disposição.</strong> Esse caminho passa por uma medicina personalizada, que considera a individualidade de cada paciente para promover <strong className="text-foreground font-semibold">emagrecimento sustentável, equilíbrio metabólico e mais qualidade de vida ao longo dos anos.</strong>
           </p>
           
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            Com <strong className="text-foreground font-semibold">um olhar funcional e estratégico sobre o corpo e o estilo de vida,</strong> é possível construir um plano que une longevidade, performance metabólica e mentoria em saúde. O objetivo não é apenas tratar sintomas, mas conduzir cada paciente a um envelhecimento ativo, consciente e com autonomia real.
+            Com <strong className="text-foreground font-semibold">um olhar funcional e estratégico sobre o corpo e o estilo de vida,</strong> é possível construir um plano que une longevidade, performance metabólica e liderança em saúde. O objetivo não é apenas tratar sintomas, mas conduzir cada paciente a um envelhecimento otimizado, consciente e com autonomia real.
           </p>
         </div>
 
@@ -112,7 +61,7 @@ export function PromiseSection() {
           
           <div className="animate-on-scroll duration-700 delay-300">
             <h3 className="font-serif text-2xl md:text-3xl lg:text-4xl font-medium text-foreground mb-6 leading-tight text-balance">
-              Você não precisa aceitar o cansaço como parte da sua vida.
+              Você não precisa aceitar o cansaço como parte da sua vida
             </h3>
             
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
@@ -133,20 +82,6 @@ export function PromiseSection() {
               <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </a>
           </div>
-        </div>
-
-        {/* Stats */}
-        <div className="animate-on-scroll duration-700 delay-500 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {stats.map((stat) => (
-            <div
-              key={stat.label}
-              className="text-center p-8 bg-secondary/50 rounded-2xl hover:bg-secondary transition-colors duration-300"
-            >
-              <stat.icon className="w-8 h-8 text-primary mx-auto mb-4" />
-              <AnimatedCounter value={stat.value} suffix={stat.suffix} />
-              <p className="text-muted-foreground mt-2">{stat.label}</p>
-            </div>
-          ))}
         </div>
       </div>
     </section>

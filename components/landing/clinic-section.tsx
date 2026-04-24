@@ -1,14 +1,14 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { ArrowUpRight, MapPin, Phone, Mail, Monitor, ExternalLink } from "lucide-react"
+import { ArrowUpRight, MapPin, Phone, Mail, ExternalLink } from "lucide-react"
 import Image from "next/image"
 
 const clinicImages = [
-  { src: "/images/clinic-1.jpg", alt: "Recepção da clínica", label: "Recepção da clínica" },
-  { src: "/images/clinic-2.jpg", alt: "Sala de espera", label: "Sala de espera" },
-  { src: "/images/clinic-3.jpg", alt: "Consultório", label: "Consultório" },
-  { src: "/images/clinic-4.jpg", alt: "Detalhes", label: "Detalhes" },
+  { src: "/images/clinic-1.jpeg", alt: "Clínica", label: "Clínica" },
+  { src: "/images/clinic-2.jpeg", alt: "Clínica", label: "Clínica" },
+  { src: "/images/clinic-3.jpeg", alt: "Clínica", label: "Clínica" },
+  { src: "/images/clinic-4.jpeg", alt: "Clínica", label: "Clínica" },
 ]
 
 const contactInfo = [
@@ -32,11 +32,6 @@ const contactInfo = [
     title: "E-mail",
     lines: ["contato@drathaismoreschi.com.br"],
     link: "mailto:contato@drathaismoreschi.com.br",
-  },
-  {
-    icon: Monitor,
-    title: "Teleconsulta",
-    lines: ["Atendimento online disponível"],
   },
 ]
 
@@ -71,7 +66,7 @@ export function ClinicSection() {
             Clínica + Redes Sociais
           </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-4 text-balance">
-            Conheça nossa clínica!
+            Conheça nossa clínica
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
             Um espaço preparado para atender com qualidade e acolhimento.
@@ -115,10 +110,6 @@ export function ClinicSection() {
                 </button>
               ))}
             </div>
-            
-            <p className="text-sm text-muted-foreground mt-4 italic">
-              * Imagens de exemplo - fotos reais da clínica em breve
-            </p>
           </div>
 
           {/* Contact Info */}
@@ -170,7 +161,7 @@ export function ClinicSection() {
             <div className="mt-6 rounded-xl overflow-hidden border border-border">
               <div className="relative h-48 bg-muted">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.7245!2d-51.9385!3d-23.4145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI0JzUyLjIiUyA1McKwNTYnMTguNiJX!5e0!3m2!1spt-BR!2sbr!4v1"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.0836722710083!2d-51.94857622654587!3d-23.42134443846663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd727c94fdff3%3A0x7c907cf28ce37eac!2sAv.%20Brasil%2C%204785%20-%20Zona%2004%2C%20Maring%C3%A1%20-%20PR%2C%2087014-070!5e0!3m2!1spt-BR!2sbr!4v1777038737829!5m2!1spt-BR!2sbr"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -181,7 +172,7 @@ export function ClinicSection() {
                 />
               </div>
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Av.+Brasil,+4785+-+Sala+303,+Maringá+-+PR"
+                href="https://www.google.com/maps/search/?api=1&query=Av%20Brasil%204785%20Maring%C3%A1%20Paran%C3%A1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 p-3 bg-card hover:bg-secondary transition-colors text-sm text-foreground"

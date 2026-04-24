@@ -89,11 +89,11 @@ export function AboutSection() {
             <p className="text-lg text-primary mb-6">Médica e Mentora</p>
             
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6">
-              Minha trajetória na medicina sempre foi guiada pelo desejo de compreender o paciente de forma integral, respeitando sua individualidade e seu momento de vida. Com formação sólida e atuação na medicina integrativa e funcional, direciono meu trabalho ao emagrecimento, à longevidade e à construção de vitalidade em todas as fases, unindo ciência, experiência clínica e um olhar atento ao que realmente sustenta saúde e bem-estar.
+              Minha trajetória na medicina sempre foi guiada pelo desejo de compreender o paciente de forma integral, respeitando sua individualidade e seu momento de vida. Com formação sólida e atuação na medicina personalizada e funcional, direciono meu trabalho ao emagrecimento, à longevidade e à construção de vitalidade em todas as fases, unindo ciência, experiência clínica e um olhar atento ao que realmente sustenta saúde e bem-estar.
             </p>
             
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
-              Meu método de trabalho é personalizado e orientado à causa raiz. A partir de uma análise profunda do metabolismo, dos hábitos e do estilo de vida, desenvolvo estratégias que promovem equilíbrio metabólico, autonomia no envelhecimento e resultados consistentes. Mais do que tratar sintomas, meu propósito é conduzir cada paciente a uma vida longa, funcional e com energia para viver bem em todas as etapas.
+              Meu método de trabalho é personalizado. A partir de uma análise profunda do metabolismo, dos hábitos e do estilo de vida, desenvolvo estratégias que promovem equilíbrio metabólico, autonomia no envelhecimento e resultados consistentes. Mais do que tratar sintomas, meu propósito é conduzir cada paciente a uma vida longa, funcional e com energia para viver bem em todas as etapas.
             </p>
 
             {/* Quote */}
@@ -106,7 +106,7 @@ export function AboutSection() {
             {/* Lifestyle */}
             <div className="mb-8">
               <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">
-                Conheça o Meu —
+                Meu estilo de vida —
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {lifestyle.map((item) => (

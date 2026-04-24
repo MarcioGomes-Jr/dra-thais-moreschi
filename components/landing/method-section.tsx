@@ -9,7 +9,7 @@ const services = [
     description: "Protocolos personalizados que respeitam seu metabolismo para resultados sustentáveis.",
   },
   {
-    title: "Medicina personalizada e integrativa",
+    title: "Medicina personalizada",
     description: "Abordagem completa que considera sua individualidade bioquímica e estilo de vida.",
   },
   {
@@ -24,11 +24,15 @@ const services = [
     title: "Qualidade de vida e performance",
     description: "Otimização da sua energia, disposição e desempenho no dia a dia.",
   },
+  {
+    title: "Equilíbrio hormonal e metabólico",
+    description: "Investigação dos fatores que impactam energia, composição corporal e vitalidade.",
+  },
 ]
 
 const methodSteps = [
   { icon: Stethoscope, title: "Consulta", description: "Avaliação completa e personalizada" },
-  { icon: FlaskConical, title: "Bateria de Exames", description: "Análise profunda do seu organismo" },
+  { icon: FlaskConical, title: "Análise de Exames", description: "Mapeamento completo da sua saúde" },
   { icon: FileText, title: "Protocolo Personalizado", description: "Tratamento sob medida para você" },
   { icon: CalendarCheck, title: "Acompanhamento", description: "Suporte contínuo em sua jornada" },
 ]
@@ -63,8 +67,8 @@ export function MethodSection() {
             Método + Áreas de Atuação
           </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-6 leading-tight text-balance">
-            Agende um horário e tenha acesso a uma{" "}
-            <span className="text-primary">visão estratégica, integrada e adaptada</span> para sua realidade!
+            Agende um horário e tenha contato a uma{" "}
+            <span className="text-primary">visão estratégica, otimizada e adaptada</span> para sua realidade
           </h2>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
             Em consulta, vamos encontrar a raiz do problema e buscar o melhor protocolo para promover vitalidade em todas as fases. Não com uma fórmula pronta, mas com processo e método.

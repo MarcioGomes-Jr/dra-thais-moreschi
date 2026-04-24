@@ -1,28 +1,33 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
-import { Instagram, Heart, MessageCircle, ExternalLink } from "lucide-react"
+import { useEffect, useRef } from "react"
+import { Instagram, ExternalLink } from "lucide-react"
 import Image from "next/image"
 
+const instagramUrl = "https://www.instagram.com/dra.thaismoreschi"
+
 const instagramPosts = [
-  { id: 1, likes: 245, comments: 18 },
-  { id: 2, likes: 312, comments: 24 },
-  { id: 3, likes: 189, comments: 12 },
-  { id: 4, likes: 423, comments: 31 },
-  { id: 5, likes: 267, comments: 19 },
-  { id: 6, likes: 356, comments: 27 },
+  "/instagram/post-1.jpg",
+  "/instagram/post-2.jpg",
+  "/instagram/post-3.jpg",
+  "/instagram/post-4.jpg",
+  "/instagram/post-5.jpg",
+  "/instagram/post-6.jpg",
 ]
 
 export function SocialSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
-  const [hoveredPost, setHoveredPost] = useState<number | null>(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("animate-in", "fade-in", "slide-in-from-bottom-8")
+            entry.target.classList.add(
+              "animate-in",
+              "fade-in",
+              "slide-in-from-bottom-8"
+            )
           }
         })
       },
@@ -36,74 +41,60 @@ export function SocialSection() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-20 md:py-32 bg-background relative overflow-hidden">
+    <section
+      ref={sectionRef}
+      className="py-20 md:py-32 bg-background relative overflow-hidden"
+    >
       <div className="container mx-auto px-4 lg:px-8">
-        {/* Header */}
         <div className="animate-on-scroll duration-700 text-center mb-12">
-          {/* Instagram Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary rounded-full mb-6">
             <Instagram className="w-4 h-4 text-muted-foreground" />
-            <span className="text-sm text-muted-foreground">@dra.thaismoreschi</span>
+            <span className="text-sm text-muted-foreground">
+              @dra.thaismoreschi
+            </span>
           </div>
-          
+
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-4 text-balance">
-            Siga minhas redes sociais e acompanhe meu trabalho de perto!
+            Siga minhas redes sociais e acompanhe meu trabalho de perto
           </h2>
-          
+
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Conteúdos sobre longevidade, emagrecimento saudável e qualidade de vida.
+            Conteúdos sobre longevidade, emagrecimento saudável e qualidade de
+            vida.
           </p>
         </div>
 
-        {/* Instagram Grid */}
-        <div className="animate-on-scroll duration-700 delay-150 flex gap-4 overflow-x-auto pb-4 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 md:grid md:grid-cols-6 md:overflow-visible">
-          {instagramPosts.map((post, index) => (
+        <div className="animate-on-scroll duration-700 delay-150 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          {instagramPosts.map((image, index) => (
             <a
-              key={post.id}
-              href="https://instagram.com/dra.thaismoreschi"
+              key={image}
+              href={instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="relative flex-shrink-0 w-40 h-40 md:w-full md:h-auto md:aspect-square rounded-xl overflow-hidden group"
-              onMouseEnter={() => setHoveredPost(post.id)}
-              onMouseLeave={() => setHoveredPost(null)}
+              className="group relative aspect-square overflow-hidden rounded-2xl bg-secondary shadow-sm"
             >
               <Image
-                src={`https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_44${67 + index * 3}%20TRATADA%20FEED-vL8De0spYJkUhNlQOHa0FHWD9WqwBx.jpg`}
-                alt={`Post Instagram ${post.id}`}
+                src={image}
+                alt={`Post do Instagram ${index + 1}`}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement
-                  target.src = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_4467%20TRATADA%20FEED-vL8De0spYJkUhNlQOHa0FHWD9WqwBx.jpg"
-                }}
               />
-              
-              {/* Hover Overlay */}
-              <div 
-                className={`absolute inset-0 bg-black/50 flex flex-col items-center justify-center gap-2 transition-opacity duration-300 ${
-                  hoveredPost === post.id ? "opacity-100" : "opacity-0"
-                }`}
-              >
-                <div className="flex items-center gap-4 text-white">
-                  <div className="flex items-center gap-1">
-                    <Heart className="w-5 h-5 fill-white" />
-                    <span className="text-sm font-medium">{post.likes}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <MessageCircle className="w-5 h-5 fill-white" />
-                    <span className="text-sm font-medium">{post.comments}</span>
-                  </div>
+
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/45 transition-colors duration-300" />
+
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-black">
+                  Ver no Instagram
+                  <ExternalLink className="w-4 h-4" />
                 </div>
-                <ExternalLink className="w-4 h-4 text-white/70" />
               </div>
             </a>
           ))}
         </div>
 
-        {/* CTA Button */}
         <div className="animate-on-scroll duration-700 delay-300 text-center mt-10">
           <a
-            href="https://instagram.com/dra.thaismoreschi"
+            href={instagramUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white font-medium rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300"

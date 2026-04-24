@@ -16,8 +16,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Dra. Thaís Moreschi | Emagrecimento, Longevidade e Bem-Estar',
-  description: 'Metodologia e protocolos personalizados e validados para te ajudar a alcançar seus objetivos. Emagrecimento com saúde metabólica, medicina personalizada e integrativa.',
-  keywords: ['emagrecimento', 'longevidade', 'bem-estar', 'medicina integrativa', 'Maringá', 'Dra Thaís Moreschi'],
+  description: 'Metodologia e protocolos personalizados e validados para te ajudar a alcançar seus objetivos. Emagrecimento com saúde metabólica, medicina personalizada.',
+  keywords: ['emagrecimento', 'longevidade', 'bem-estar', 'medicina personalizada', 'Maringá', 'Dra Thaís Moreschi'],
   authors: [{ name: 'Dra. Thaís Moreschi' }],
   icons: {
     icon: [

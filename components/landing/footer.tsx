@@ -44,7 +44,7 @@ export function Footer() {
                 </span>
               </div>
               <p className="text-white/70 text-sm leading-relaxed mb-4">
-                Metodologia e protocolos personalizados para te ajudar a alcançar seus objetivos. Emagrecimento com saúde metabólica, medicina personalizada e integrativa.
+                Metodologia e protocolos personalizados para te ajudar a alcançar seus objetivos. Emagrecimento com saúde metabólica, medicina personalizada.
               </p>
               <p className="text-white/80 text-sm font-medium">
                 CRM-PR: 25.605
@@ -57,7 +57,7 @@ export function Footer() {
                 Navegação
               </h4>
               <nav className="flex flex-col gap-3">
-                <a href="#servicos" className="text-white/70 hover:text-white transition-colors text-sm">
+                <a href="#metodo" className="text-white/70 hover:text-white transition-colors text-sm">
                   Serviços
                 </a>
                 <a href="#clinica" className="text-white/70 hover:text-white transition-colors text-sm">
@@ -127,7 +127,7 @@ export function Footer() {
         <div className="container mx-auto px-4 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-white/50 text-center md:text-left">
-              {new Date().getFullYear()} Dra. Thaís Moreschi. Feito com <span className="text-white/70">&#9825;</span> por Over Performance
+              {new Date().getFullYear()} Dra. Thaís Moreschi. Feito com <span className="text-white/70">&#9825;</span> por <a href="https://www.instagram.com/overperformance_/" target="_blank">Over Performance</a>
             </p>
             <button
               onClick={scrollToTop}
