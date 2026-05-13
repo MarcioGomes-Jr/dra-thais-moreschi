@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Cormorant_Garamond, Inter } from 'next/font/google'
+import { Cormorant_Garamond, Inter, Marcellus } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
@@ -12,6 +12,12 @@ const cormorant = Cormorant_Garamond({
 const inter = Inter({ 
   subsets: ["latin"],
   variable: "--font-sans"
+});
+
+const marcellus = Marcellus({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-logo"
 });
 
 export const metadata: Metadata = {
@@ -44,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" className={`${cormorant.variable} ${inter.variable}`}>
+    <html lang="pt-BR" className={`${cormorant.variable} ${inter.variable} ${marcellus.variable}`}>
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}

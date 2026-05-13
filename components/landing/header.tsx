@@ -5,11 +5,10 @@ import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
-  { id: "sobre", href: "#sobre", label: "Sobre" },
-  { id: "metodo", href: "#metodo", label: "Método" },
-  { id: "servicos", href: "#metodo", label: "Serviços" },
+  { id: "metodo", href: "#metodo", label: "Método + Áreas de Atuação" },
+  { id: "sobre", href: "#quem-sou-eu", label: "Sobre" },
   { id: "clinica", href: "#clinica", label: "Clínica" },
-  { id: "contato", href: "#contato", label: "Contato" },
+  { id: "contato", href: "#clinica", label: "Contato" },
 ]
 
 export function Header() {
@@ -41,7 +40,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex flex-col">
-            <span className="font-serif text-xl md:text-2xl font-medium tracking-wide text-foreground">
+            <span className="font-logo text-xl md:text-2xl font-normal tracking-wide text-foreground">
               DRA. THAÍS MORESCHI
             </span>
             <span className="text-[10px] md:text-xs text-muted-foreground tracking-widest">

@@ -33,7 +33,7 @@ export function AboutSection() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-20 md:py-32 bg-background relative overflow-hidden">
+    <section id="quem-sou-eu" ref={sectionRef} className="py-20 md:py-32 bg-background relative overflow-hidden">
       {/* Decorative gradient */}
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-accent/30 to-transparent rounded-full blur-3xl" />
       

@@ -54,7 +54,7 @@ export function HeroSection() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
-                href="#servicos"
+                href="#metodo"
                 className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-medium rounded-full hover:bg-primary/90 transition-all duration-300 hover:shadow-xl hover:scale-105"
               >
                 Conheça Meus Serviços
@@ -90,13 +90,6 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-2 animate-bounce">
-        <span className="text-xs text-muted-foreground">Role para baixo</span>
-        <div className="w-6 h-10 border-2 border-primary/30 rounded-full flex justify-center">
-          <div className="w-1.5 h-3 bg-primary rounded-full mt-2 animate-pulse" />
-        </div>
-      </div>
     </section>
   )
 }

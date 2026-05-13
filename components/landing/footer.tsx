@@ -39,7 +39,7 @@ export function Footer() {
             {/* Brand Column */}
             <div>
               <div className="mb-6">
-                <span className="font-serif text-2xl font-medium text-white">
+                <span className="font-logo text-2xl font-normal tracking-wide text-white">
                   Dra. Thaís Moreschi
                 </span>
               </div>
@@ -58,13 +58,13 @@ export function Footer() {
               </h4>
               <nav className="flex flex-col gap-3">
                 <a href="#metodo" className="text-white/70 hover:text-white transition-colors text-sm">
-                  Serviços
+                  Método + Áreas de Atuação
+                </a>
+                <a href="#quem-sou-eu" className="text-white/70 hover:text-white transition-colors text-sm">
+                  Sobre
                 </a>
                 <a href="#clinica" className="text-white/70 hover:text-white transition-colors text-sm">
                   Clínica
-                </a>
-                <a href="#sobre" className="text-white/70 hover:text-white transition-colors text-sm">
-                  Sobre
                 </a>
                 <a href="https://instagram.com/dra.thaismoreschi" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors text-sm">
                   Instagram
