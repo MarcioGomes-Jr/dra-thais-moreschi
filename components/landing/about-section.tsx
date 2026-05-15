@@ -83,7 +83,7 @@ export function AboutSection() {
               Quem Sou Eu
             </p>
             
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-2">
+            <h2 className="font-logo text-3xl md:text-4xl lg:text-5xl font-normal tracking-wide text-foreground mb-2">
               Dra. Thaís Moreschi
             </h2>
             <p className="text-lg text-primary mb-6">Médica e Mentora</p>
