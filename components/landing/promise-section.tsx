@@ -39,7 +39,7 @@ export function PromiseSection() {
           </h2>
           
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6">
-            Existe um caminho possível para <strong className="text-foreground font-semibold">não apenas viver bem, mas envelhecer com vitalidade, autonomia e disposição.</strong> Esse caminho passa por uma medicina personalizada, que considera a individualidade de cada paciente para promover <strong className="text-foreground font-semibold">emagrecimento sustentável, equilíbrio metabólico e mais qualidade de vida ao longo dos anos.</strong>
+            Existe um caminho possível para <strong className="text-foreground font-semibold">não apenas viver bem, mas envelhecer com vitalidade, autonomia e disposição.</strong> Esse caminho passa por uma medicina personalizada, que considera a individualidade de cada paciente para promover <strong className="text-foreground font-semibold">emagrecimento sustentável, reposição hormonal, equilíbrio metabólico e mais qualidade de vida ao longo dos anos.</strong>
           </p>
           
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
@@ -61,15 +61,24 @@ export function PromiseSection() {
           
           <div className="animate-on-scroll duration-700 delay-300">
             <h3 className="font-serif text-2xl md:text-3xl lg:text-4xl font-medium text-foreground mb-6 leading-tight text-balance">
-              Você não precisa aceitar o cansaço como parte da sua vida
+              Você não precisa aceitar viver abaixo do seu verdadeiro potencial
             </h3>
             
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
-              Você sente o corpo sem energia, o sono não restaurador, o estresse constante e os sinais do envelhecimento chegando antes da hora.
+              Talvez vc sinta falta de energia ao longo do dia. Percebe dificuldade para emagrecer, ganhar massa muscular ou manter uma composição corporal saudável. Seu rendimento físico, mental e emocional já não é o mesmo. E, muitas vezes, parece que você está apenas sobrevivendo à rotina sem disposição para viver plenamente.
+
             </p>
             
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
-              Nos últimos anos, lidamos com diversos casos como esse. Conhecemos o caminho para deixar tudo isso para trás.
+              Esses sinais não devem ser ignorados.
+            </p>
+
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
+              Com o passar dos anos, homens e mulheres podem apresentar alterações hormonais e metabólicas importantes que afetam várias áreas da vida. Quando bem indicada, a terapia de reposição hormonal pode ser uma ferramenta estratégica para restaurar equilíbrio, vitalidade e performance com segurança e individualização.
+            </p>
+
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
+              Porque viver bem não é apenas ausência de doença. É ter energia, clareza, força e disposição para aproveitar a vida em todas as suas áreas.
             </p>
 
             <a
