@@ -116,10 +116,13 @@ export function Footer() {
                   href="https://instagram.com/dra.thaismoreschi"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-2 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                  className="mt-2 flex items-center gap-3 text-white/70 hover:text-white transition-colors text-sm"
                   aria-label="Instagram"
                 >
-                  <Instagram className="w-5 h-5 text-white" />
+                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                    <Instagram className="w-4 h-4 text-white" />
+                  </div>
+                  @dra.thaismoreschi
                 </a>
               </div>
             </div>
