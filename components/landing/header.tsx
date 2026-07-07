@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
@@ -40,12 +41,17 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex flex-col">
-            <span className="font-logo text-xl md:text-2xl font-normal tracking-wide text-foreground">
-              DRA. THAÍS MORESCHI
-            </span>
-            <span className="text-[10px] md:text-xs text-muted-foreground tracking-widest">
+            <Image
+              src="/logo.png"
+              alt="Dra. Thaís Moreschi"
+              width={2921}
+              height={1126}
+              priority
+              className="h-auto w-36 md:w-44"
+            />
+            {/* <span className="text-[10px] md:text-xs text-muted-foreground tracking-widest">
               CRM-PR: 25.605
-            </span>
+            </span> */}
           </a>
 
           {/* Desktop Navigation */}

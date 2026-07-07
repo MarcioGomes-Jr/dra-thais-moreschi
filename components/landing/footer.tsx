@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { Instagram, Phone, Mail, MapPin, ArrowUp } from "lucide-react"
 
 export function Footer() {
@@ -8,7 +9,7 @@ export function Footer() {
   }
 
   return (
-    <footer className="bg-[#897057]">
+    <footer className="bg-[#705641]">
       {/* CTA Section */}
       <div className="container mx-auto px-4 lg:px-8 py-12 md:py-16">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
@@ -24,7 +25,7 @@ export function Footer() {
             href="https://wa.me/5544988348338"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-white text-[#897057] font-medium rounded-full hover:bg-white/90 transition-all duration-300 hover:shadow-lg whitespace-nowrap"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-white text-[#705641] font-medium rounded-full hover:bg-white/90 transition-all duration-300 hover:shadow-lg whitespace-nowrap"
           >
             <Phone className="w-5 h-5" />
             Agendar Consulta
@@ -39,9 +40,13 @@ export function Footer() {
             {/* Brand Column */}
             <div>
               <div className="mb-6">
-                <span className="font-logo text-2xl font-normal tracking-wide text-white">
-                  Dra. Thaís Moreschi
-                </span>
+                <Image
+                  src="/logo-rodape.png"
+                  alt="Dra. Thaís Moreschi"
+                  width={3068}
+                  height={1122}
+                  className="h-auto w-48"
+                />
               </div>
               <p className="text-white/70 text-sm leading-relaxed mb-4">
                 Metodologia e protocolos personalizados para te ajudar a alcançar seus objetivos. Emagrecimento com saúde metabólica, medicina personalizada.
@@ -88,13 +93,13 @@ export function Footer() {
                   (44) 98834-8338
                 </a>
                 <a
-                  href="mailto:contato@drathaismoreschi.com.br"
+                  href="mailto:drathaislmoreschi@gmail.com"
                   className="flex items-center gap-3 text-white/70 hover:text-white transition-colors text-sm"
                 >
                   <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
                     <Mail className="w-4 h-4 text-white" />
                   </div>
-                  contato@drathaismoreschi.com.br
+                  drathaislmoreschi@gmail.com
                 </a>
                 <div className="flex items-start gap-3 text-white/70 text-sm">
                   <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">

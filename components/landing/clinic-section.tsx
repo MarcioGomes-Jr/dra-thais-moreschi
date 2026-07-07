@@ -30,8 +30,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "E-mail",
-    lines: ["contato@drathaismoreschi.com.br"],
-    link: "mailto:contato@drathaismoreschi.com.br",
+    lines: ["drathaislmoreschi@gmail.com"],
+    link: "mailto:drathaislmoreschi@gmail.com",
   },
 ]
 

@@ -36,7 +36,7 @@ export function AboutSection() {
     <section id="quem-sou-eu" ref={sectionRef} className="py-20 md:py-32 bg-background relative overflow-hidden">
       {/* Decorative gradient */}
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-accent/30 to-transparent rounded-full blur-3xl" />
-      
+
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Images Grid */}
@@ -82,16 +82,18 @@ export function AboutSection() {
             <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4">
               Quem Sou Eu
             </p>
-            
+
             <h2 className="font-logo text-3xl md:text-4xl lg:text-5xl font-normal tracking-wide text-foreground mb-2">
               Dra. Thaís Moreschi
             </h2>
             <p className="text-lg text-primary mb-6">Médica e Mentora</p>
-            
+
+            <p className="text-lg text-primary mb-6">CRM-PR: 25.605</p>
+
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6">
               Minha trajetória na medicina sempre foi guiada pelo desejo de compreender o paciente de forma integral, respeitando sua individualidade e seu momento de vida. Com formação sólida e atuação na medicina personalizada e funcional, direciono meu trabalho ao emagrecimento, à longevidade e à construção de vitalidade em todas as fases, unindo ciência, experiência clínica e um olhar atento ao que realmente sustenta saúde e bem-estar.
             </p>
-            
+
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
               Meu método de trabalho é personalizado. A partir de uma análise profunda do metabolismo, dos hábitos e do estilo de vida, desenvolvo estratégias que promovem equilíbrio metabólico, autonomia no envelhecimento e resultados consistentes. Mais do que tratar sintomas, meu propósito é conduzir cada paciente a uma vida longa, funcional e com energia para viver bem em todas as etapas.
             </p>
