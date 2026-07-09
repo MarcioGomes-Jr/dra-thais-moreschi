@@ -65,7 +65,7 @@ export function PromiseSection() {
             </h3>
             
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
-              Talvez vc sinta falta de energia ao longo do dia. Percebe dificuldade para emagrecer, ganhar massa muscular ou manter uma composição corporal saudável. Seu rendimento físico, mental e emocional já não é o mesmo. E, muitas vezes, parece que você está apenas sobrevivendo à rotina sem disposição para viver plenamente.
+              Talvez você sinta falta de energia ao longo do dia. Percebe dificuldade para emagrecer, ganhar massa muscular ou manter uma composição corporal saudável. Seu rendimento físico, mental e emocional já não é o mesmo. E, muitas vezes, parece que você está apenas sobrevivendo à rotina sem disposição para viver plenamente.
 
             </p>
             

@@ -91,7 +91,7 @@ export function AboutSection() {
             <p className="text-lg text-primary mb-6">CRM-PR: 25.605</p>
 
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6">
-              Minha trajetória na medicina sempre foi guiada pelo desejo de compreender o paciente de forma integral, respeitando sua individualidade e seu momento de vida. Com formação sólida e atuação na medicina personalizada e funcional, direciono meu trabalho ao emagrecimento, à longevidade e à construção de vitalidade em todas as fases, unindo ciência, experiência clínica e um olhar atento ao que realmente sustenta saúde e bem-estar.
+              Minha trajetória na medicina sempre foi guiada pelo desejo de compreender o paciente de forma integral, respeitando sua individualidade e seu momento de vida. Com formação sólida e atuação na medicina personalizada e funcional, direciono meu trabalho a reposição hormonal, ao emagrecimento, à longevidade e à construção de vitalidade em todas as fases, unindo ciência, experiência clínica e um olhar atento ao que realmente sustenta saúde e bem-estar.
             </p>
 
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
